@@ -1,9 +1,9 @@
-Grading at Fri 22 Mar 2024 10:25:33 PM UTC
+Grading at Sun Oct  4 07:42:59 UTC 2020
 Checking code1.c for legal syntax
 Checking for int max (int num1, int num2)
 Found on line 3, column 1 
 Checking for int main(void)
-Found on line 10, column 1 
+Found on line 12, column 1 
 Trying to run the code..
 Your file matched the expected output
 Removing your main() and replacing it with our own to run more tests...

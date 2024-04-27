@@ -1,10 +1,20 @@
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "outname.h"
 
 char * computeOutputFileName(const char * inputName) {
-  char * outName=malloc(strlen(inputName)*sizeof(outName)+7*sizeof(outName));
-  strcpy(outName, inputName);
-  return strcat(outName, ".counts");
+  char * outname = malloc((strlen(inputName)+4)*sizeof(*outname));
+  strcpy(outname , inputName);
+  outname= realloc(outname ,(strlen(inputName)+10)*sizeof(*outname));
+  strcat(outname,".counts");
+  return outname;
+  //WRITE ME
 }
+
+
+
+
+
+

@@ -1,2 +1,2 @@
-breaker: breaker.c
-	gcc -Wall -pedantic -o breaker breaker.c
+ breaker: breaker.c
+	gcc -o breaker  breaker.c

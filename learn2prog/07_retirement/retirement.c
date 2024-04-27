@@ -1,57 +1,59 @@
-#include <stdlib.h>
-#include <stdio.h>
+#include<stdio.h>
+#include<stdlib.h>
 
-struct _retire_info {
+#define EXIT_SUCCESS 0
+
+struct _retire_info
+{
   int months;
   double contribution;
   double rate_of_return;
 };
+
 typedef struct _retire_info retire_info;
 
-double calcFund(double initial, double rate_of_return, double contribution){
-  initial=initial+(initial*rate_of_return);
-  initial=initial+contribution;
-  return initial;
+double new_bal(double bal,retire_info r)
+{
+  return(bal*(1+r.rate_of_return)+r.contribution);
 }
 
-void retirement (int startAge, double initial, retire_info working, retire_info retired)
+void cal(int ms,int *y,int *m)
 {
-  int age=startAge/12;
-  int month=startAge%12;
-  int finalpoint;
-  for (int ret=0; ret<2; ret++){
-    if (ret==0) {
-      finalpoint=working.months;
-    }
-    if (ret==1) {
-      finalpoint=retired.months;
-    }
-    for (int i=0; i<finalpoint; i++){
-  printf("Age %3d month %2d you have $%.2f\n", age, month, initial);
-  if (ret==0){
-  initial=calcFund(initial, working.rate_of_return, working.contribution);
-  }
-  if (ret==1){
-    initial = calcFund(initial, retired.rate_of_return, retired.contribution);
-  }
-  month++;
-    if (month==12) {
-      month=0;
-      age++;
-  }  
-  }
-  }
-  }
+  *y=ms/12;
+  *m=ms%12;
+}
 
-int main() {
-retire_info working;
-retire_info retired; 
-working.months=489;
-working.contribution=1000;
-working.rate_of_return=(0.045/12);
-retired.months=384;
-retired.contribution=-4000;
-retired.rate_of_return=(0.01/12);
-retirement(327, 21345, working, retired) ;
- return EXIT_SUCCESS;
+void print(int ms,double bal)
+{
+  int age,m;
+  cal(ms,&age,&m);
+  printf("Age %3d month %2d you have $%.2lf\n",age,m,bal);
+}
+
+void retirement(int startAge,double initial,retire_info working,retire_info retired)
+{
+  int i,age=startAge;
+  double bal=initial;
+  for(i=0;i<working.months;++i)
+    {
+      print(age,bal);
+      age++;
+      bal=new_bal(bal,working);
+    }
+  for(i=0;i<retired.months;++i)
+    {
+      print(age,bal);
+      age++;
+      bal=new_bal(bal,retired);
+    }
+}
+
+int main()
+{
+  retire_info working={489,1000.0,0.045/12};
+  retire_info retired={384,-4000.0,0.01/12};
+  int age =327;
+  double savings=21345;
+  retirement(age,savings,working,retired);
+  return EXIT_SUCCESS;
 }

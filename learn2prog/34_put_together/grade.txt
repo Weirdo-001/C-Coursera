@@ -1,4 +1,4 @@
-Grading at Fri 12 Apr 2024 05:14:08 PM UTC
+Grading at Mon 04 Mar 2024 06:55:57 PM UTC
 Attempting to compile:
 rm -f  outname.o  counts.o  main.o  kv.o count_values *~
 gcc -c -Wall -Werror -std=gnu99 -pedantic -ggdb3 outname.c
@@ -13,6 +13,20 @@ testcase1 passed, your program successfully indicated a failure
 valgrind was clean
 #################################################
 testcase2:
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
 Your file matched the expected output
 Comparing file list1a.txt.counts with answer
 Your output is correct
@@ -23,6 +37,26 @@ Your output is correct
 valgrind was clean
 #################################################
 testcase3:
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
+count sucessful!!!
+make output file name
+witre output file
 Your file matched the expected output
 Comparing file list2a.txt.counts with answer
 Your output is correct
@@ -36,6 +70,14 @@ Your output is correct
 valgrind was clean
 #################################################
 testcase4:
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
+read kv_pair_sucess!!!
+count sucessful!!!
+make output file name
+witre output file
 Your file matched the expected output
 Comparing file list3a.txt.counts with answer
 Your output is correct

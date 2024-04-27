@@ -1,6 +1,6 @@
-Grading at Tue 09 Apr 2024 12:59:28 PM UTC
+Grading at Sun Oct  4 07:43:38 UTC 2020
 Attempting to compile test.c
-gcc -Wall -ggdb3 -o test test.c
+gcc -o test -pedantic -std=gnu99 -Wall -Werror test.c
 compiled
 Your file matched the expected output
 Your output matched what we expected
