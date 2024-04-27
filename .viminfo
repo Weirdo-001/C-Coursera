@@ -10,11 +10,26 @@
 
 # hlsearch on (H) or off (h):
 ~h
+# Last Search Pattern:
+~Msle0~/}
+
 # Command Line History (newest to oldest):
 :wq
-|2,0,1713759330,,"wq"
+|2,0,1712941627,,"wq"
+:q
+|2,0,1712683326,,"q"
+:qa!
+|2,0,1711657357,,"qa!"
 
 # Search String History (newest to oldest):
+? }
+|2,1,1711546509,,"}"
+? \<typedef\>
+|2,1,1711210193,,"\\<typedef\\>"
+? \<include\>
+|2,1,1711208907,,"\\<include\\>"
+? \<int\>
+|2,1,1711149913,,"\\<int\\>"
 
 # Expression History (newest to oldest):
 
@@ -24,164 +39,485 @@
 
 # Registers:
 ""-	CHAR	0
-	"
-|3,1,36,0,1,0,1713759186,"\""
+	C
+|3,1,36,0,1,0,1712688652,"C"
 
 # File marks:
-'0  17  0  ~/learn2prog/03_code2/code2.c
-|4,48,17,0,1713759330,"~/learn2prog/03_code2/code2.c"
-'1  49  0  ~/learn2prog/03_code2/code2.c
-|4,49,49,0,1713759201,"~/learn2prog/03_code2/code2.c"
-'2  49  0  ~/learn2prog/03_code2/code2.c
-|4,50,49,0,1713759201,"~/learn2prog/03_code2/code2.c"
-'3  9  0  ~/learn2prog/02_code1/code1.c
-|4,51,9,0,1713556073,"~/learn2prog/02_code1/code1.c"
-'4  3  12  ~/learn2prog/02_code1/code1.c
-|4,52,3,12,1713555151,"~/learn2prog/02_code1/code1.c"
-'5  1  4  ~/learn2prog/00_hello/hello.txt
-|4,53,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
-'6  1  2  ~/learn2prog/00_hello/hello.txt
-|4,54,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
+'0  1  0  ~/learn2prog/34_put_together/outname.c
+|4,48,1,0,1712941627,"~/learn2prog/34_put_together/outname.c"
+'1  20  9  ~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt
+|4,49,20,9,1712855459,"~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt"
+'2  14  15  ~/learn2prog/c3prj1_deck/grade.txt
+|4,50,14,15,1712688933,"~/learn2prog/c3prj1_deck/grade.txt"
+'3  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,51,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+'4  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,52,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+'5  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,53,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+'6  28  0  ~/learn2prog/c3prj1_deck/cards.h
+|4,54,28,0,1712686233,"~/learn2prog/c3prj1_deck/cards.h"
+'7  26  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,55,26,0,1712685392,"~/learn2prog/c3prj1_deck/deck.h"
+'8  26  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,56,26,0,1712685392,"~/learn2prog/c3prj1_deck/deck.h"
+'9  111  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,57,111,0,1712685303,"~/learn2prog/c3prj1_deck/deck.c"
 
 # Jumplist (newest first):
--'  17  0  ~/learn2prog/03_code2/code2.c
-|4,39,17,0,1713759330,"~/learn2prog/03_code2/code2.c"
--'  49  0  ~/learn2prog/03_code2/code2.c
-|4,39,49,0,1713759281,"~/learn2prog/03_code2/code2.c"
--'  49  0  ~/learn2prog/03_code2/code2.c
-|4,39,49,0,1713759201,"~/learn2prog/03_code2/code2.c"
--'  1  0  ~/learn2prog/03_code2/code2.c
-|4,39,1,0,1713758979,"~/learn2prog/03_code2/code2.c"
--'  1  0  ~/learn2prog/03_code2/code2.c
-|4,39,1,0,1713758979,"~/learn2prog/03_code2/code2.c"
--'  9  0  ~/learn2prog/02_code1/code1.c
-|4,39,9,0,1713556073,"~/learn2prog/02_code1/code1.c"
--'  9  0  ~/learn2prog/02_code1/code1.c
-|4,39,9,0,1713556073,"~/learn2prog/02_code1/code1.c"
--'  9  0  ~/learn2prog/02_code1/code1.c
-|4,39,9,0,1713556073,"~/learn2prog/02_code1/code1.c"
--'  9  0  ~/learn2prog/02_code1/code1.c
-|4,39,9,0,1713556073,"~/learn2prog/02_code1/code1.c"
--'  18  0  ~/learn2prog/02_code1/code1.c
-|4,39,18,0,1713555326,"~/learn2prog/02_code1/code1.c"
--'  18  0  ~/learn2prog/02_code1/code1.c
-|4,39,18,0,1713555326,"~/learn2prog/02_code1/code1.c"
--'  18  0  ~/learn2prog/02_code1/code1.c
-|4,39,18,0,1713555326,"~/learn2prog/02_code1/code1.c"
--'  18  0  ~/learn2prog/02_code1/code1.c
-|4,39,18,0,1713555326,"~/learn2prog/02_code1/code1.c"
--'  17  0  ~/learn2prog/02_code1/code1.c
-|4,39,17,0,1713555324,"~/learn2prog/02_code1/code1.c"
--'  17  0  ~/learn2prog/02_code1/code1.c
-|4,39,17,0,1713555324,"~/learn2prog/02_code1/code1.c"
--'  17  0  ~/learn2prog/02_code1/code1.c
-|4,39,17,0,1713555324,"~/learn2prog/02_code1/code1.c"
--'  17  0  ~/learn2prog/02_code1/code1.c
-|4,39,17,0,1713555324,"~/learn2prog/02_code1/code1.c"
--'  3  12  ~/learn2prog/02_code1/code1.c
-|4,39,3,12,1713555214,"~/learn2prog/02_code1/code1.c"
--'  3  12  ~/learn2prog/02_code1/code1.c
-|4,39,3,12,1713555214,"~/learn2prog/02_code1/code1.c"
--'  3  12  ~/learn2prog/02_code1/code1.c
-|4,39,3,12,1713555214,"~/learn2prog/02_code1/code1.c"
--'  3  12  ~/learn2prog/02_code1/code1.c
-|4,39,3,12,1713555214,"~/learn2prog/02_code1/code1.c"
--'  1  0  ~/learn2prog/02_code1/code1.c
-|4,39,1,0,1713554770,"~/learn2prog/02_code1/code1.c"
--'  1  0  ~/learn2prog/02_code1/code1.c
-|4,39,1,0,1713554770,"~/learn2prog/02_code1/code1.c"
--'  1  0  ~/learn2prog/02_code1/code1.c
-|4,39,1,0,1713554770,"~/learn2prog/02_code1/code1.c"
--'  1  0  ~/learn2prog/02_code1/code1.c
-|4,39,1,0,1713554770,"~/learn2prog/02_code1/code1.c"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  4  ~/learn2prog/00_hello/hello.txt
-|4,39,1,4,1713535846,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
--'  1  2  ~/learn2prog/00_hello/hello.txt
-|4,39,1,2,1708966305,"~/learn2prog/00_hello/hello.txt"
+-'  1  0  ~/learn2prog/34_put_together/outname.c
+|4,39,1,0,1712941627,"~/learn2prog/34_put_together/outname.c"
+-'  20  9  ~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt
+|4,39,20,9,1712855459,"~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt"
+-'  20  9  ~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt
+|4,39,20,9,1712855459,"~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt"
+-'  14  15  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,14,15,1712688933,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  14  15  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,14,15,1712688933,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  14  15  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,14,15,1712688933,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  14  15  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,14,15,1712688933,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  1  519  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,1,519,1712688623,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  1  519  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,1,519,1712688623,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  1  519  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,1,519,1712688623,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  1  519  ~/learn2prog/c3prj1_deck/grade.txt
+|4,39,1,519,1712688623,"~/learn2prog/c3prj1_deck/grade.txt"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  33  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,33,0,1712686339,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/test-deck.c
+|4,39,1,0,1712686329,"~/learn2prog/c3prj1_deck/test-deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  42  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,42,0,1712686305,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.c
+|4,39,1,0,1712686294,"~/learn2prog/c3prj1_deck/deck.c"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  10  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,10,0,1712686282,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
+-'  1  0  ~/learn2prog/c3prj1_deck/deck.h
+|4,39,1,0,1712686248,"~/learn2prog/c3prj1_deck/deck.h"
 
 # History of marks within files (newest to oldest):
 
+> ~/learn2prog/34_put_together/outname.c
+	*	1712941625	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/learn2prog/28_fix_vg_encr/grade_REMOTE_174449.txt
+	*	1712855455	0
+	"	20	9
+
+> ~/learn2prog/28_fix_vg_encr/grade_BASE_174449.txt
+	*	1712855450	0
+	"	20	9
+
+> ~/learn2prog/28_fix_vg_encr/grade_LOCAL_174449.txt
+	*	1712855428	0
+	"	2	29
+
+> ~/learn2prog/28_fix_vg_encr/grade.txt
+	*	1712855424	0
+	"	2	29
+	^	2	30
+	.	2	30
+	+	2	30
+
+> ~/learn2prog/c3prj1_deck/grade.txt
+	*	1712688931	0
+	"	14	15
+	^	14	16
+	.	14	15
+	+	1	739
+	+	1	505
+	+	1	4801
+	+	1	3319
+	+	1	1945
+	+	14	15
+
+> ~/learn2prog/c3prj1_deck/test-deck.c
+	*	1712686337	0
+	"	33	0
+	^	33	0
+	.	32	1
+	+	32	1
+
+> ~/learn2prog/c3prj1_deck/deck.c
+	*	1712686303	0
+	"	42	0
+	^	42	0
+	.	41	1
+	+	1	0
+	+	1	618
+	+	110	1
+	+	41	1
+
+> ~/learn2prog/c3prj1_deck/deck.h
+	*	1712686280	0
+	"	10	0
+	^	10	1
+	.	10	1
+	+	1	122
+	+	1	317
+	+	1	139
+	+	25	6
+	+	18	6
+	+	10	1
+
+> ~/learn2prog/c3prj1_deck/cards.h
+	*	1712686230	0
+	"	28	0
+	^	28	0
+	.	27	6
+	+	27	6
+
+> ~/learn2prog/c3prj1_deck/cards.c
+	*	1712683344	0
+	"	1	0
+	^	1	0
+	.	1	0
+	+	1	0
+
+> ~/learn2prog/c3prj1_deck/card.c
+	*	1712683324	0
+	"	1	0
+
+> ~/learn2prog/c3prj1_deck/grade_REMOTE_563177.txt
+	*	1712673982	0
+	"	10	14
+
+> ~/learn2prog/12_read_ptr2/grade_LOCAL_509556.txt
+	*	1712668566	0
+	"	1	11
+
+> ~/learn2prog/12_read_ptr2/grade_REMOTE_509556.txt
+	*	1712668559	0
+	"	1	11
+
+> ~/learn2prog/12_read_ptr2/grade.txt
+	*	1712668555	0
+	"	1	11
+	^	1	12
+	.	10	0
+	+	10	0
+
+> ~/learn2prog/08_testing/isPrime-broken1
+	*	1712653733	0
+	"	7	0
+
+> ~/learn2prog/07_retirement/retirement.c
+	*	1712652269	0
+	"	53	0
+	^	53	1
+	.	57	0
+	+	1	37
+	+	1	160
+	+	1	379
+	+	1	1
+	+	1	380
+	+	1	17
+	+	1	404
+	+	1	487
+	+	1	1048
+	+	1	380
+	+	30	1
+	+	1	1048
+	+	1	439
+	+	1	1050
+	+	1	380
+	+	1	904
+	+	1	986
+	+	1	1306
+	+	1	905
+	+	57	0
+
+> ~/learn2prog/07_retirement/vim
+	*	1711657354	0
+	"	1	0
+	^	52	0
+	.	51	1
+	+	51	1
+
+> ~/learn2prog/07_retirement/grade.txt
+	*	1711656286	0
+	"	1	0
+
+> ~/learn2prog/06_rect/rectangle.c
+	*	1711654913	0
+	"	142	19
+	^	142	20
+	.	142	19
+	+	99	11
+	+	108	4
+	+	132	27
+	+	140	1
+	+	37	1
+	+	80	1
+	+	1	2
+	+	141	2
+	+	1	1
+	+	141	23
+	+	328	0
+	+	141	7
+	+	142	2
+	+	141	6
+	+	388	1
+	+	393	39
+	+	142	17
+	+	143	18
+	+	142	19
+
+> ~/learn2prog/06_rect/grade.txt
+	*	1711654864	0
+	"	1	0
+
+> /usr/share/vim/vim81/doc/help.txt
+	*	1711652922	0
+	"	1	0
+
+> ~/learn2prog/06_rect/rectangle.txt
+	*	1711208839	0
+	"	1	0
+
+> ~/learn2prog/06_rect/reactangle.c
+	*	1711204750	0
+	"	1	0
+
+> ~/learn2prog/05_squares/squares.c
+	*	1711150320	0
+	"	67	20
+	^	58	88
+	.	58	87
+	+	12	55
+	+	22	56
+	+	69	4
+	+	52	130
+	+	54	65
+	+	57	13
+	+	58	87
+
+> ~/learn2prog/04_compile/hello.c
+	*	1711148858	0
+	"	8	0
+	^	8	0
+	.	7	1
+	+	7	1
+
 > ~/learn2prog/03_code2/code2.c
-	*	1713759328	0
-	"	17	0
-	^	17	0
-	.	1	8
-	+	3	0
+	*	1711147757	0
+	"	12	0
+	^	12	0
+	.	16	16
+	+	36	58
+	+	3	17
+	+	5	33
+	+	7	31
+	+	9	14
+	+	11	20
+	+	14	0
 	+	15	0
-	+	17	0
-	+	19	0
-	+	29	0
-	+	27	0
-	+	25	0
-	+	23	0
-	+	21	0
-	+	14	18
-	+	45	0
-	+	46	0
-	+	43	0
-	+	39	89
-	+	41	56
-	+	1	8
+	+	14	15
+	+	15	0
+	+	16	16
 
 > ~/learn2prog/02_code1/code1.c
-	*	1713555389	0
-	"	9	0
-	^	3	13
-	.	9	8
-	+	1	29
-	+	2	13
-	+	3	12
-	+	7	1
-	+	14	75
-	+	9	8
+	*	1711145195	0
+	"	2	2
+	^	2	25
+	.	2	24
+	+	2	24
 
-> ~/learn2prog/00_hello/hello.txt
-	*	1713535845	0
+> ~/learn2prog/01_apple/fruit.txt
+	*	1711144184	0
 	"	1	4
 	^	1	5
 	.	1	4
 	+	1	4
+
+> ~/learn2prog/01_apple/apple.py
+	*	1710341874	0
+	"	23	24
+	^	23	25
+	.	23	24
+	+	23	24
+
+> ~/learn2prog/00_hello/hello.txt
+	*	1710341212	0
+	"	2	0
+	^	2	0
+	.	1	4
+	+	1	4
+
+> ~/learn2prog/c3prj1_deck/grade_LOCAL_563177.txt
+	"	9	14
