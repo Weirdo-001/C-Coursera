@@ -1,104 +1,81 @@
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 #include "kv.h"
+#include <assert.h>
+#include <ctype.h>
 
-kvpair_t* splitPairs(char* str){
-  
-  char* value1=strchr(str,'=');
-  *value1='\0';
-  value1 ++;  
-  char* n=strchr(value1,'\n');
-  if(n != NULL) *n='\0';
-  
-  kvpair_t* pair = malloc((size_t) sizeof(*pair));
-  pair ->key=str;
-  pair ->value=value1;
-  return pair;  
+kvpair_t * readKV(FILE *f) {
+  char *line = NULL;
+  size_t sz = 0;
+				 //Get whole line and store it into "line"
+  if (getline(&line, &sz, f)==EOF) {
+    free(line);                  //free line if we've reached EOF
+    return NULL;
+  }
+				 //Find first occurrence to = and set ptr to point there
+  char * ptr1 = strchr(line, '=');
+  if (ptr1 == NULL) return NULL;
+
+  char * ptr2 = strchr(line, '\n');
+  * ptr1 = '\0';                 //Create bounds of key and value, line will point to key and ptr1 at '\0' - previously '='
+  * ptr2 = '\0';
+
+  kvpair_t * returnPair=malloc(sizeof(*returnPair));
+  returnPair->key = line;
+  ptr1++;
+  returnPair->value = ptr1;
+  return returnPair;
 }
 
 kvarray_t * readKVs(const char * fname) {
-  //open the file
   FILE * f = fopen(fname, "r");
-  if (f == NULL) {
-    perror("Could not open file");
+  if (f==NULL){
+    fprintf(stderr, "File not found");
     return NULL;
   }
-
-  //read the lines
-  char* line= NULL;
-  size_t sz=0;
-  kvpair_t* curr_pair = NULL;
+  int line_num=0;
+  kvarray_t * answerArray = malloc(sizeof(* answerArray));
+  kvpair_t * pair = NULL;
+  answerArray->list_len=0;
+  answerArray->list=NULL;
  
-  kvarray_t* kv_array= malloc((size_t)(sizeof(*kv_array)));
-  kv_array->size = 0;
-  kv_array->arr=NULL;
-  
-  while (getline(&line,&sz, f) >= 0) {
-    curr_pair=splitPairs(line);
-    kv_array->arr=realloc(kv_array->arr,(kv_array->size+1)*sizeof(*kv_array->arr));
-    kv_array->arr[kv_array->size]=curr_pair;
-    kv_array->size ++;
-    line=NULL;
-  }
-  free(line);
-
-  int result=fclose(f);
-  if (result !=0)return NULL;
-  return kv_array;
+  while ((pair = readKV(f))!=NULL){
+    answerArray->list = realloc(answerArray->list, (line_num+1)*sizeof(* answerArray->list));
+    answerArray->list[line_num] = pair;
+    line_num++;
+        
 }
-
+  answerArray->list_len=line_num;
+  assert(fclose(f)==0);
+  free(pair);
+  return answerArray;
+}
 void freeKVs(kvarray_t * pairs) {
-  //WRITE ME
-  for(int i=0 ;i<pairs->size;i++){
-
-    free(pairs->arr[i]->key);
-    free(pairs->arr[i]);
+  for (int i=0; i<pairs->list_len; i++){
+    free(pairs->list[i]->key);
+    //free(pairs->list[i]->value); Commented out, getting invalid frees on Valgrind
+    free(pairs->list[i]);
   }
-  free(pairs->arr);
+  free(pairs->list);
   free(pairs);
 }
 
 void printKVs(kvarray_t * pairs) {
-
-    kvpair_t* curr_pair;
-  for(int i=0;i<pairs->size;i++){
-    curr_pair=pairs->arr[i];
-    printf("key = '%s' value = '%s'\n" ,curr_pair->key, curr_pair->value);
+  int num = pairs->list_len;
+  kvpair_t ** ptr = pairs->list;
+  for (int i=0; i<num; i++){
+    printf("key = '%s' value = '%s'\n",ptr[i]->key, ptr[i]->value);
   }
-  //WRITE ME
 }
 
 char * lookupValue(kvarray_t * pairs, const char * key) {
-  kvpair_t* curr_pair;
-  for(int i=0;i<pairs->size;i++){
-    curr_pair=pairs->arr[i];
-    if (! strcmp(curr_pair->key,key)) return  curr_pair->value;
+  for (int i=0; i<pairs->list_len; i++){
+    //    printf("in forloop with key: %s, comparing to %s\n", key, pairs->list[i]->key);    
+    if (strcmp(pairs->list[i]->key, key)==0){
+      // printf("FOUND IT");
+      return pairs->list[i]->value;
+    }
   }
-  //WRITE ME
   return NULL;
 }
-
-/*#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include "kv.h"
-
-
-
-kvarray_t * readKVs(const char * fname) {
-  //WRITE ME
-}
-
-void freeKVs(kvarray_t * pairs) {
-  //WRITE ME
-}
-
-void printKVs(kvarray_t * pairs) {
-  //WRITE ME
-}
-
-char * lookupValue(kvarray_t * pairs, const char * key) {
-  //WRITE ME
-}*/

@@ -1,24 +1,12 @@
-aaaaa bbbbb
-aaaaa bbbbc
-aaaaa bbbcc
-aaaaa bbccc
-aaaaa bcccc
-aaaaa ccccc
-aaaab bbbbb
-aaaab bbbbc
-aaaab bbbcc
-aaaab bbccc
-aaaab bcccc
-aaaab ccccc
-aaabb bbccc
-aaabc bbccc
-aaaaa bbbb
-aaaa bbbbb
-a
-aaa bbb ddd
-14444 ? ???
-aaaaa bbbbbb
-aaaaa aaaaA
-abcde ghijk
-aadcb aaccc
-aaaaaa bbbbbb
+00020 00020
+01234 01230
+01234 01200
+00123 01234
+aaaaa aaaaaa
+aaaaa aaaa
+123456 12345
+1234 12345
+12345
+aaaaa aaaaa
+123aa 12345
+12345 12345 1

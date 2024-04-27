@@ -1,6 +1,6 @@
-Grading at Mon 04 Mar 2024 06:08:05 PM UTC
+Grading at Thu 11 Apr 2024 05:27:08 AM UTC
 Attempting to compile breaker.c 
-gcc -o breaker  breaker.c
+gcc -Wall -pedantic -o breaker breaker.c
 testcase1 passed
 #################################################
 testcase2:

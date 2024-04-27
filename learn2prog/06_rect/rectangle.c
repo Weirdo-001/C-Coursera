@@ -1,6 +1,146 @@
+/****#include <stdio.h>
+
+// Define struct for rectangles
+typedef struct {
+    int x;
+    int y;
+    int width;
+    int height;
+} rectangle;
+
+// Function to canonicalize the rectangle
+rectangle canonicalize(rectangle r) {
+    // Ensure width and height are non-negative
+    if (r.width < 0) {
+        r.x = r.x + r.width;
+        r.width = -r.width;
+    }
+    if (r.height < 0) {
+        r.y = r.y + r.height;
+        r.height = -r.height;
+    }
+    return r;
+}
+
+// Main function for testing
+int main() {
+    // Example rectangle with non-standard representation
+    rectangle r = {2, 2, -3, 4};
+
+    // Canonicalize the rectangle
+    rectangle canonical = canonicalize(r);
+
+    // Print the canonical rectangle
+    printf("Canonical Rectangle: x=%d, y=%d, width=%d, height=%d\n", canonical.x, canonical.y, canonical.width, canonical.height);
+
+    return 0;
+}
 #include <stdio.h>
-#include <stdlib.h>
-//I've provided "min" and "max" functions in
+
+// Define struct for rectangles
+typedef struct {
+    int x;
+    int y;
+#include <stdio.h>
+
+// Define struct for rectangles
+typedef struct {
+    int x;
+    int y;
+    int width;
+    int height;
+} rectangle;
+
+// Function to canonicalize the rectangle
+rectangle canonicalize(rectangle r) {
+    // Ensure width and height are non-negative
+    if (r.width < 0) {
+        r.x = r.x + r.width;
+        r.width = -r.width;
+    }
+    if (r.height < 0) {
+        r.y = r.y + r.height;
+        r.height = -r.height;
+    }
+    return r;
+}
+
+// Main function for testing
+int main() {
+    // Example rectangle with non-standard representation
+    rectangle r = {2, 2, -3, 4};
+
+    // Canonicalize the rectangle
+    rectangle canonical = canonicalize(r);
+
+    // Print the canonical rectangle
+    printf("Canonical Rectangle: x=%d, y=%d, width=%d, height=%d\n", canonical.x, canonical.y, canonical.width, canonical.height);
+
+    return 0;
+}
+    int width;
+    int height;
+} rectangle;
+
+// Function to canonicalize the rectangle
+rectangle canonicalize(rectangle r) {
+    // Ensure width and height are non-negative
+    if (r.width < 0) {
+        r.x = r.x + r.width;
+        r.width = -r.width;
+    }
+    if (r.height < 0) {
+        r.y = r.y + r.height;
+        r.height = -r.height;
+    }
+    return r;
+}
+
+// Function to compute intersection of two rectangles
+rectangle intersection(rectangle r1, rectangle r2) {
+    // Get canonical representation of rectangles
+    r1 = canonicalize(r1);
+    r2 = canonicalize(r2);
+
+    // Compute the intersection rectangle
+    int x_overlap = (r1.x < r2.x + r2.width) && (r2.x < r1.x + r1.width);
+    int y_overlap = (r1.y < r2.y + r2.height) && (r2.y < r1.y + r1.height);
+
+    if (!x_overlap || !y_overlap) {
+        // No intersection, return rectangle with width and height = 0
+        rectangle no_intersection = {0, 0, 0, 0};
+        return no_intersection;
+    }
+
+    int x1 = (r1.x > r2.x) ? r1.x : r2.x;
+    int y1 = (r1.y > r2.y) ? r1.y : r2.y;
+    int x2 = (r1.x + r1.width < r2.x + r2.width) ? r1.x + r1.width : r2.x + r2.width;
+    int y2 = (r1.y + r1.height < r2.y + r2.height) ? r1.y + r1.height : r2.y + r2.height;
+
+    rectangle intersect = {x1, y1, x2 - x1, y2 - y1};
+    return intersect;
+}
+
+// Main function to test the implementation
+int main() {
+    rectangle r1 = {3, 2, -2, 4};
+    rectangle r2 = {1, 3, 4, -3};
+
+    // Canonicalize rectangles
+    r1 = canonicalize(r1);
+    r2 = canonicalize(r2);
+
+    // Compute intersection
+    rectangle intersect = intersection(r1, r2);
+
+    // Print the result
+    printf("Intersection Rectangle: x=%d, y=%d, width=%d, height=%d\n", intersect.x, intersect.y, intersect.width, intersect.height);
+
+    return 0;
+}
+****/#include <stdio.h>
+#include <stdio.h>//#//include <stdlib.h>
+#include <stdlib.h>//I've provided "min" and "max" functions in
 //case they are useful to you
 int min (int a, int b) {
   if (a < b) {
@@ -17,41 +157,55 @@ int max (int a, int b) {
 
 //Declare your rectangle structure here!
 typedef struct {
-  int x,y,width,height;
-}rectangle;
+  int x;
+  int y;
+  int width;
+  int height;
+} rectangle;
+
 
 rectangle canonicalize(rectangle r) {
   //WRITE THIS FUNCTION
-  if(r.width<0)
-    {
-      r.x+=r.width;
-      r.width=-r.width;
-    }
-  if(r.height<0)
-    {
-      r.y+=r.height;
-      r.height=-r.height;
-    }
+  if (r.width < 0) {
+    r.x += r.width;
+    r.width = - r.width;
+  }
+
+  if (r.height < 0) {
+    r.y += r.height;
+    r.height = - r.height;
+  }
+  
   return r;
 }
 rectangle intersection(rectangle r1, rectangle r2) {
   //WRITE THIS FUNCTION
-  r1 =canonicalize(r1);
-  r2 =canonicalize(r2);
+  const rectangle EMPTY = {0, 0, 0, 0};
 
-  const rectangle emp ={0,0,0,0};
-  
-  int x=max(r1.x,r2.x);
-  int width=min(r1.x+r1.width,r2.x+r2.width);
-  if(x>width)
-    return emp;
-  
-  int y=max(r1.y,r2.y);
-  int height=min(r1.y+r1.height,r2.y+r2.height);
-  if(y>height)
-    return emp;
-  rectangle rr={x,y,width-x,height-y};
-  return rr;
+  r1 = canonicalize(r1);
+  r2 = canonicalize(r2);
+
+  int x_left = max(r1.x, r2.x);
+  int x_right = min(r1.x + r1.width, r2.x + r2.width);
+  if (x_left > x_right) {
+    return EMPTY;
+  }
+
+  int y_bottom = max(r1.y, r2.y);
+  int y_top = min(r1.y + r1.height, r2.y + r2.height);
+  if (y_bottom > y_top) {
+    return EMPTY;
+  }
+    
+  rectangle ret = {
+    x_left,
+    y_bottom,
+    x_right - x_left,
+    y_top - y_bottom
+  };
+
+  return ret;
+      
 }
 
 //You should not need to modify any code below this line

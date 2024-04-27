@@ -1,61 +1,32 @@
-#include<stdio.h>
-#include<stdlib.h>
+#include <stdlib.h>
+#include <stdio.h>
 
-unsigned power(unsigned x,unsigned y);
+unsigned power (unsigned x, unsigned y);
 
-int main(void)
-{
-  unsigned ans;
-
-  ans=power(0,0);
-  if(ans!=1) return EXIT_FAILURE;
-
-  ans=power(0,1);
-  if(ans!=0) return EXIT_FAILURE;
-
-  ans=power(2,1);
-  if(ans!=2) return EXIT_FAILURE;
-
-  ans=power(0,5);
-  if(ans!=0) return EXIT_FAILURE;
+unsigned powCorrect(unsigned x, unsigned y){
+  unsigned result=1;
+  while (y>0){
+    result*=x;
+    y--;
+  }
+  return result;
   
-  ans=power(5,0);
-  if(ans!=1) return EXIT_FAILURE;
+  }
 
-  ans=power(5,2);
-  if(ans!=25) return EXIT_FAILURE;
+int main(){
+  if (power (1,0)!=1) exit(EXIT_FAILURE);
+  if (power (-1,0)!=1) exit(EXIT_FAILURE);
+  if (power (0,0)!=1) exit(EXIT_FAILURE);
+  if (power (100,20)>1) exit(EXIT_FAILURE);
+      //if (power (100,0)!=1) exit(EXIT_FAILURE);
+      // if (power (100,0)!=1) exit(EXIT_FAILURE);
+      // if (power (100,0)!=1) exit(EXIT_FAILURE);
 
-ans=power(2*3,2);
-  if(ans!=36) return EXIT_FAILURE;
-
-  ans=power(5,1);
-  if(ans!=5) return EXIT_FAILURE;
-
-  ans=power(2,10);
-  if(ans!=1024) return EXIT_FAILURE;
-
-  ans=power(10,2);
-  if(ans!=100) return EXIT_FAILURE;
-
-  ans=power(10,5);
-  if(ans!=100000) return EXIT_FAILURE;
-  
-  ans=power(0,7);
-  if(ans!=0) return EXIT_FAILURE;
-
-    ans=power(2,0);
-  if(ans!=1) return EXIT_FAILURE;
-
-    ans=power(0,0);
-  if(ans!=1) return EXIT_FAILURE;
-
-    ans=power(1,0);
-  if(ans!=1) return EXIT_FAILURE;
-
-    ans=power(1,1);
-  if(ans!=1) return EXIT_FAILURE;
-    ans=power(1,2);
-  if(ans!=1) return EXIT_FAILURE;
-
+  for (int i=1; i<300; i++){
+     if (power (i,i/2)!=powCorrect(i,i/2)) {
+      //      printf("%d to the %d:returned %u, my correct says it should be %u\n",i, i/2, power(i,i/2),powCorrect(i,i/2));
+       exit(EXIT_FAILURE);
+     }
+  }
   return EXIT_SUCCESS;
 }
