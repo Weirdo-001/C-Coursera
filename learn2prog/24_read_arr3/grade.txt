@@ -1,5 +1,0 @@
-Grading at Mon 04 Mar 2024 06:06:20 PM UTC
-Your file matched the expected output
-Your output matched what we expected
-
-Overall Grade: A

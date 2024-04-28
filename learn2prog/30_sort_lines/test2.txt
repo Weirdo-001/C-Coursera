@@ -1,5 +1,0 @@
-cow
-pig
-alias
-run
-
